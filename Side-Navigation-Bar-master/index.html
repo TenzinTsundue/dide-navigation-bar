@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar">
+        <h2><i class="fas fa-graduation-cap"></i>TK</h2>
+        <ul>
+            <li class="activemode"><a href="#">Upload</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">View</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Exit</a></li>
+        </ul>
+    </div>
+    <div class="main_content">
+        <div class="header">Welcome!! Have a nice day.</div>  
+        <div class="breadcrumb_section">
+                <h4>Welcometo this section</h4>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Search</a></li>
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Upload</li>
+                </ol>
+        </div>
+        <div class="info">
+            <div class='contain_form'>
+            <!-- Basic Detail -->
+                <h3 class="display-4">File Upload</h3>
+                <br>
+                <div class="row">
+                    <div class="col-2">
+                        <strong>Basic Detail</strong>
+                    </div>
+                    <div class="col-2">
+                        Name
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" id="staticEmail" placeholder="Name">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        Description
+                    </div>
+                    <div class="col-8">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        File
+                    </div>
+                    <div class="col-8">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                <br>
+            
+            <!-- Donor Detail -->
+                <div class="row">
+                    <div class="col-2">
+                        <strong>Donar</strong>
+                    </div>
+                    <div class="col-2">
+                    Name
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="staticEmail" placeholder="Donor name">
+                    </div>
+                </div>
+                <br>
+            <!-- Filter Detail -->
+                <div class="row">
+                    <div class="col-2">
+                        <strong>Filter</strong>
+                    </div>
+                    <div class="col-2">
+                        Category
+                    </div>
+                    <div class="col-8">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Primary filter kind 1</option>
+                            <option>Primary filter kind 2</option>
+                            <option>Primary filter kind 3</option>
+                            <option>Primary filter kind 4</option>
+                            <option>Primary filter kind 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        Tags
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="staticEmail" placeholder="Tags">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        Doc Type
+                    </div>
+                    <div class="col-8">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Type 1</option>
+                            <option>Type 2</option>
+                            <option>Type 3</option>
+                            <option>Type 4</option>
+                            <option>Type 5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        Year
+                    </div>
+                    <div class="col-8">
+                        <input type="text" class="form-control" id="staticEmail" placeholder="Doc Type">
+                    </div>
+                </div>
+                <br>
+            <!-- Language and region Detail -->
+                <div class="row">
+                    <div class="col-2">
+                        <strong>Language and region</strong>
+                    </div>
+                    <div class="col-2">
+                        Language
+                    </div>
+                    <div class="col-8">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Tibetan
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                English
+                            </label>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Hindi
+                            </label>               
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        Region
+                    </div>
+                    <div class="col-8">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Type 1</option>
+                            <option>Type 2</option>
+                            <option>Type 3</option>
+                            <option>Type 4</option>
+                            <option>Type 5</option>
+                        </select>
+                    </div>   
+                </div>
+                <br>
+
+                <!-- Additional Files -->
+                <div class="row">
+                    <div class="col-2">
+                        <strong>Additional Files</strong>
+                    </div>
+                    <div class="col-2">
+                        File
+                    </div>
+                    <div class="col-8">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        File
+                    </div>
+                    <div class="col-8">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        File
+                    </div>
+                    <div class="col-8">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        
+                    </div>
+                    <div class="col-2">
+                        File
+                    </div>
+                    <div class="col-8">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+apple
+apple
+apple
+apple
+
+</body>
+</html>
